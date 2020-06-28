@@ -6,9 +6,16 @@ import { DefaultComponent } from './default.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [DefaultComponent, DashboardComponent, PostsComponent],
-  imports: [CommonModule, RouterModule, SharedModule, MatSidenavModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    SharedModule,
+    MatSidenavModule,
+    MatDividerModule,
+  ],
 })
 export class DefaultModule {}

@@ -5,9 +5,10 @@ import { DashboardComponent } from './../../modules/dashboard/dashboard.componen
 import { DefaultComponent } from './default.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [DefaultComponent, DashboardComponent, PostsComponent],
-  imports: [CommonModule, RouterModule, SharedModule],
+  imports: [CommonModule, RouterModule, SharedModule, MatSidenavModule],
 })
 export class DefaultModule {}

@@ -1,3 +1,4 @@
+import { DefaultModule } from './layouts/default/default.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,7 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    DefaultModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

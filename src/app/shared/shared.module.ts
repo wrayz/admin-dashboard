@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,6 +23,7 @@ import { MatListModule } from '@angular/material/list';
     FlexLayoutModule,
     MatMenuModule,
     MatListModule,
+    RouterModule,
   ],
   exports: [HeaderComponent, SidebarComponent, FooterComponent],
 })
